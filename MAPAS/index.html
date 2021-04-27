@@ -1,0 +1,102 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<title>⚜PROYECTO FEROX⚜</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">⚜Licorera FEROX⚜</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home 🏡
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ubicaciones ❣</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Licores 🧴</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Vinos 🍷</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cervezas 🍺</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Otros Productos🍱</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Carnes 🥩</a>
+                    <a class="dropdown-item" href="#">Quesos 🧀</a>
+                    <a class="dropdown-item" href="#">Garnish 🍭</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar 🔎">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+          </nav>
+            
+         <div id="product-list" class="col-md-8"></div>
+        
+        <div class="container my-5 text-left">
+               <select name="provincia" class="provincia btn btn-outline-danger" >
+               <option>Seleccione un pais</option>
+               </select>
+               <div style="display: grid; grid-template-columns: auto auto;">
+                    
+                    Temperatura maxima 🥵🌡:
+                    </div>
+                    <div id="temperaturaMaxima"></div>
+                    <div>
+                    Temperatura minima 🥶🌨:
+                    </div>
+                    <div id="temperaturaMinima"></div>
+                    <div>
+                    Temperatura actual 😎✨:
+                    </div>
+                    <div id="temperaturaActual"></div>
+                    <div >
+                    Descripcion:
+                    </div>
+                    <div id="descripcion"></div>
+                    <div>
+                    Pais:
+                    </div>
+                    <div  id="pais"></div>
+ 
+                    </div>
+                    
+                
+                <div class="mt-5" id="contenido">  
+               </div>
+           <div id="map"></div>
+ 
+        </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+<script src="script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+
+
+
+</html>
